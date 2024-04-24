@@ -8,6 +8,12 @@ namespace csharp_abstract_animals
 {
     public abstract class Animale
     {
-       
+        public void Dormi()
+        {
+            Console.WriteLine("Zzzzzzzzzzzzzzzzzzzzzz");
+        }
+
+        public abstract void Verso();
+        public abstract void Mangia();
     }
 }
