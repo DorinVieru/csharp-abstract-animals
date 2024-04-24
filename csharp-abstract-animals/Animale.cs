@@ -17,6 +17,18 @@ namespace csharp_abstract_animals
         public abstract void Mangia();
     }
 
+    // Interfaccia per il volo
+    public interface IVolante
+    {
+        void Vola();
+    }
+
+    // Interfaccia per il nuoto
+    public interface INuotante
+    {
+        void Nuota();
+    }
+
     // Classe Cane
     public class Cane : Animale
     {
