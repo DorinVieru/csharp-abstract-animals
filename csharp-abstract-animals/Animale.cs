@@ -44,7 +44,7 @@ namespace csharp_abstract_animals
     }
 
     // Classe Passerotto
-    public class Passerotto : Animale
+    public class Passerotto : Animale, IVolante
     {
         public override void Verso()
         {
@@ -55,10 +55,15 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Mangia semi/cereali");
         }
+
+        public void Vola()
+        {
+            Console.WriteLine("Sto volando!!!");
+        }
     }
 
     // Classe Aquila
-    public class Aquila : Animale
+    public class Aquila : Animale, IVolante
     {
         public override void Verso()
         {
@@ -69,10 +74,15 @@ namespace csharp_abstract_animals
         {
             Console.WriteLine("Mangia carne");
         }
+
+        public void Vola()
+        {
+            Console.WriteLine("Sto volando!!!");
+        }
     }
 
     // Classe Delfino
-    public class Delfino : Animale
+    public class Delfino : Animale, INuotante
     {
         public override void Verso()
         {
@@ -82,6 +92,11 @@ namespace csharp_abstract_animals
         public override void Mangia()
         {
             Console.WriteLine("Mangia pesce");
+        }
+
+        public void Nuota()
+        {
+            Console.WriteLine("Sto nuotando!!!");
         }
     }
 }
