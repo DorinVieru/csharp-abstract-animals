@@ -14,6 +14,14 @@
 
         static void Main(string[] args)
         {
+            List<Animale> animali = new List<Animale>
+            {
+                new Cane(),
+                new Passerotto(),
+                new Aquila(),
+                new Delfino(),
+            };
+
             
         }
     }
